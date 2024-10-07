@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PsychCare</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="C:\Users\femi\OneDrive\Desktop\PsychCare Website\PsychCare-\resources\firebase-config.js"></script>
+</head>
+<body>
+     <h1>Welcome to PsychCare</h1>
+
+    <form id="quizForm">
+        <label for="question1">How often do you feel anxious?</label><br>
+        <input type="radio" name="anxiety" value="often"> Often<br>
+        <input type="radio" name="anxiety" value="sometimes"> Sometimes<br>
+        <input type="radio" name="anxiety" value="never"> Never<br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+     <div class="feature" id="chat">
+         <h2>Start Anonymous Chat</h2>
+         <button onclick="startChat()">Start Anonymous Chat</button>
+     </div>
+
+
+     <div class="feature" id="resources">
+        <h2>Resource Library</h2>
+         <a href="resources/index.html">View PsychCare Resources</a>
+         <ul id="resourceList"></ul>
+     </div>
+
+
+     <div class="feature" id="self-assesment">
+        <h2>Self-Assesment Tool</h2>
+         <button onclick="startAssesment()">Take Quiz</button>
+     </div>
+
+     <script src="script.js"></script>
+</body>
+</html>
